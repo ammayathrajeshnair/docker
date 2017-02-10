@@ -31,7 +31,7 @@ const (
 // byPortInfo is a temporary type used to sort types.Port by its fields
 type byPortInfo []types.Port
 
-func (r byPortInfo) Len() int      { return len(r) }
+func (r byPortInfo) Len() int      {return len(r) }
 func (r byPortInfo) Swap(i, j int) { r[i], r[j] = r[j], r[i] }
 func (r byPortInfo) Less(i, j int) bool {
 	if r[i].PrivatePort != r[j].PrivatePort {
