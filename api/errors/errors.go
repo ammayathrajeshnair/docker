@@ -8,7 +8,6 @@ type apiError struct {
 	error
 	statusCode int
 }
-
 // HTTPErrorStatusCode returns a status code.
 func (e apiError) HTTPErrorStatusCode() int {
 	return e.statusCode
